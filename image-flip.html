@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    section {
+      position: absolute;
+      width: 600px;
+      height: 400px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+    }
+
+div {
+  width: 25%;
+  height: 100%;
+  background-image: url(https://cdn.theatlantic.com/thumbor/viW9N1IQLbCrJ0HMtPRvXPXShkU=/0x131:2555x1568/976x549/media/img/mt/2017/06/shutterstock_319985324/original.jpg);
+  background-size: cover;
+  transition: 2s;
+}
+
+div:hover {
+  transform: rotateX(180deg);
+}
+
+div:nth-child(1){
+  background-position-x: 0;
+  background-position-y: -200px;
+}
+
+div:nth-child(2){
+  background-position-x: -150px;
+}
+
+div:nth-child(3){
+  background-position-x: -300px;
+}
+
+div:nth-child(4){
+  background-position-x: -450px;
+}
+
+div:nth-child(5){
+  background-position-x: 0;
+  background-position-y: -100px;
+}
+
+
+  </style>
+</head>
+<body>
+  <section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+</body>
+</html>
