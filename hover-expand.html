@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hover-Expand Test(Only CSS)</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      width: 85rem;
+      height: 85rem;
+      background-color: ghostwhite;
+      place-items: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(37rem, 37rem));
+      grid-gap: 30px;
+      margin: 0 auto;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .container div {
+      position: relative;
+      width: 35rem;
+      height: 35rem;
+      overflow: hidden;
+    }
+    .container div:nth-child(1) {
+      background: url(https://cdn.pixabay.com/photo/2017/04/24/13/37/architecture-2256489_960_720.jpg);
+      background-size: cover;
+      transition: 1s;
+    }
+    .container div:nth-child(2) {
+      background: url(https://cdn.pixabay.com/photo/2018/04/28/10/55/architecture-3357028_960_720.jpg);
+      background-size: cover;
+      transition: 1s;
+    }
+    .container div:nth-child(3) {
+      background: url(https://cdn.pixabay.com/photo/2018/11/22/23/57/london-3833039_960_720.jpg);
+      background-size: cover;
+      transition: 1s;
+    }
+    .container div:nth-child(4) {
+      background: url(https://cdn.pixabay.com/photo/2018/01/20/14/26/skyscraper-3094696_960_720.jpg);
+      background-size: cover;
+      transition: 1s;
+    }
+
+    .container div p:nth-child(1) {
+      position: relative;
+      bottom: -85%;
+      left: 10%;
+      font-size: 30px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #f1c75b;
+      text-shadow: 2px 2px black;
+    }
+
+    .container div:hover {
+      width: 38rem;
+      height: 38rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="div1">
+      <p>IMG-1</p>
+    </div>
+    <div class="div2">
+      <p>IMG-2</p>
+    </div>
+    <div class="div3">
+      <p>IMG-3</p>
+    </div>
+    <div class="div4">
+      <p>IMG-4</p>
+    </div>
+  </div>
+</body>
+</html>
