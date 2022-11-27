@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clone Coding - Parallax Scrolling</title>
+  <link rel="stylesheet" href="Parallax Scrolling.css">
+
+</head>
+<body>
+  <header>
+    <a href="" class="logo">Logo</a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <section>
+    <img src="../images/mountain.png" id="mountain">
+    <h2 id="text">Text Here</h2>
+    <a href="#" id="button">Explore</a>
+    <img src="../images/ship.png" id="ship">
+  </section>
+  <div class="sec" id="sec">
+    <h2>Parallax Scrolling Clone Coding</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, exercitationem. Repellendus, voluptates voluptatem fuga necessitatibus velit vero quia quisquam voluptate est, veritatis quaerat totam doloremque labore quam sit quidem. Illum! <br><br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta pariatur quibusdam, sunt, libero dolores facilis velit commodi blanditiis aperiam, voluptas ex molestiae architecto voluptates. Dignissimos exercitationem placeat minima voluptatibus quaerat. <br><br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci odio eaque eos placeat odit quis corrupti, qui iusto fuga? Vero eum vel est placeat! Perferendis enim voluptatibus ab? Alias, adipisci.</p>  </div>
+  <script>
+    let text = document.getElementById('text');
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      text.style.marginRight = value * 2 + 'px';
+    })
+  </script>
+</body>
+</html>
