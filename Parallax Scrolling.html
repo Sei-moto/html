@@ -32,7 +32,7 @@
 
     window.addEventListener('scroll', function(){
       let value = window.scrollY;
-      text.style.marginRight = value * 2 + 'px';
+      text.style.opacity = 1 - value * 0.002;
     })
   </script>
 </body>
